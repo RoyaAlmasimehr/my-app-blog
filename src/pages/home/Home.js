@@ -6,27 +6,24 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function Home() {
-    const[articles,setArticles]=useState([])
+  const [articles, setArticles] = useState([]);
 
-    useEffect( ()=>{
-        axios
-          .get("http://localhost:3000/articles")
-          .then((response) => setArticles(response.data));
-
-    },[])
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/articles")
+      .then((response) => setArticles(response.data));
+  }, []);
 
   return (
     <div>
       <MyNavbar />
       <Container>
-        <h1     style={{ marginTop: "20px" }}>لیست مقالات</h1>
+        <h1 style={{ marginTop: "20px" }}>لیست مقالات</h1>
         <Row className="row-cols-1 row-cols-md-2  row-cols-lg-3  row-cols-xl-4 gy-4 py-3">
-          
-          {articles.map((article) =>(
-<Col>
-  <ArticleItem  {...article}/>
-</Col>
-         
+          {articles.map((article) => (
+            <Col key={article.id}>
+              <ArticleItem {...article} />
+            </Col>
           ))}
         </Row>
       </Container>
@@ -35,5 +32,3 @@ function Home() {
 }
 
 export default Home;
-
-

@@ -13,7 +13,7 @@ function ArticleItem(props) {
         <Card.Body>
           <Card.Title className="py-2">{props.title}</Card.Title>
           <Card.Text>{props.desc}</Card.Text>
-          <Link to={`/article/ ${props.id}`}>
+          <Link to={`/article/${props.id}`}>
             <span className="read-more">
               <span>ادامه مقاله</span>
               <TiArrowLeftThick size="25px" />
