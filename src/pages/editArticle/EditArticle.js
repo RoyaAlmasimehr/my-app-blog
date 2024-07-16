@@ -1,12 +1,11 @@
-import  './EditArticle.css'
-
+import "./EditArticle.css";
 
 function EditArticle() {
-    return ( 
-        <div>
-            
-        </div>
-     )
+  return (
+    <div>
+      <h1>edit article page</h1>
+    </div>
+  );
 }
 
 export default EditArticle;
