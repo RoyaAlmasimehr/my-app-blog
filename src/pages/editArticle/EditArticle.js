@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
+import Footer from '../../components/footer/Footer'
 function EditArticle() {
   const [articleData, setArticleData] = useState({});
   const articleId = useParams().articleId;
@@ -106,6 +107,7 @@ function EditArticle() {
           </Button>
         </Form>
       </div>
+       <Footer />
     </div>
   );
 }

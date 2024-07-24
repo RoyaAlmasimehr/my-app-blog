@@ -8,6 +8,8 @@ import { BiTimeFive, BiCategoryAlt } from "react-icons/bi";
 import { MdDelete, MdOutlineEditCalendar } from "react-icons/md";
 import "./Article.css";
 import Swal from "sweetalert2";
+
+import Footer from "../../components/footer/Footer";
 function Article() {
   const [articleData, setArticleData] = useState({});
   const articleId = useParams().articleId;
@@ -245,6 +247,8 @@ function Article() {
           </Col>
         </Row>
       </Container>
+
+      <Footer />
     </>
   );
 }

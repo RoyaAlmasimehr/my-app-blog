@@ -18,7 +18,9 @@ function MyNavbar() {
         style={{ backgroundColor: " #719192" }}
       >
         <Container>
-          <Navbar.Brand className="lalezar fs-4" href="#">حرفه هنرمند</Navbar.Brand>
+          <Navbar.Brand className="lalezar fs-4" href="#">
+            حرفه هنرمند
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
@@ -40,6 +42,9 @@ function MyNavbar() {
                 </NavLink>
                 <NavLink className="nav-link" to="/add-article">
                   ساخت مقاله
+                </NavLink>
+                <NavLink className="nav-link" to="/articles">
+                  مقالات
                 </NavLink>
                 <NavLink className="nav-link" to="/about">
                   درباره ما

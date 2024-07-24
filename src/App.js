@@ -4,6 +4,7 @@ import AddArticle from "./pages/addArticle/AddArticle";
 import Article from "./pages/article/Article";
 import Home from "./pages/home/Home";
 import EditArticle from "./pages/editArticle/EditArticle";
+import Articles from "./pages/articles/Articles";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="add-article" element={<AddArticle />} />
         <Route path="/article/:articleId" element={<Article />} />
         <Route path="/edit-article/:articleId" element={<EditArticle />} />
+        <Route   path="/articles"   element={<Articles />} />
       </Routes>
     </BrowserRouter>
   );
